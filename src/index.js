@@ -4,7 +4,7 @@ import "./index.css";
 import "./App.css";
 import registerServiceWorker from "./registerServiceWorker";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import {Route} from "react-router";
+import {Redirect, Route} from "react-router";
 import {Router} from "react-router-dom";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import createBrowserHistory from "history/createBrowserHistory";
@@ -28,7 +28,7 @@ const Root = () => (
                 <Route path="/login" component={Login}/>
                 <Route path="/app/home" component={Home}/>
                 <Route path="/app/album" component={Album}/>
-                <Route path="/" component={Login}/>
+                <Redirect from="/" to="/app/home"/>
             </div>
         </Router>
     </MuiThemeProvider>

@@ -28,7 +28,7 @@ export default class Login extends React.Component {
     }
 
     componentWillMount() {
-        /*         firebaseAuth().getRedirectResult().then(function(result) {
+        firebaseAuth().getRedirectResult().then(function(result) {
          if (result.user) {
          console.log("GoogleLogin Redirect result");
          if (result.credential) {
@@ -50,7 +50,7 @@ export default class Login extends React.Component {
          var credential = error.credential;
          // ...
          alert(error);
-         })*/
+         })
         ;
 
         /**

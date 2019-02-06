@@ -119,11 +119,10 @@ body {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  position: fixed;
   bottom: 0;
   color: white;
   background-color: black;
-    
+
 }
 .col-bottom {
   text-align: center;

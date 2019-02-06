@@ -28,7 +28,7 @@ const Root = () => (
                 <Route path="/login" component={Login}/>
                 <Route path="/app/home" component={Home}/>
                 <Route path="/app/album" component={Album}/>
-                <Redirect from="/" to="/app/home"/>
+                <Redirect from="/" to="/login"/>
             </div>
         </Router>
     </MuiThemeProvider>

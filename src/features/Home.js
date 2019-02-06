@@ -225,9 +225,9 @@ export default class Home extends React.Component {
 
         return (
             <div>
-                <h1>My Feed</h1>
-                <h3> Welcome to the dopple app. To start use the middle button at the bottom to find your dopples.</h3>
-                {this.state.isMobile ? <h3>For selfies - rotate to landscape</h3>: ""}
+                <h1 style={{fontWeight: 'bold', fontSize: '5em', textAlign: 'center'}}>My Doople Feed</h1>
+                <h3 style={{fontWeight: 'bold', textAlign: 'center'}}> To start press the "camera icon" to upload</h3>
+                {this.state.isMobile ? <h3 style={{fontSize: '3em', color: 'red', textAlign: 'center'}}> For Selfies - rotate to landscape</h3>: ""}
                 {allImages}
 
                 <Grid className="bottom-nav">

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.5.9",
+    "firebase-functions": "^2.2.0",
     "material-ui": "^0.20.1",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",

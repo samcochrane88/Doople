@@ -213,7 +213,8 @@ export default class Album extends React.Component {
 
         return (
             <div>
-                <h1>The Dopple Feed</h1>
+                <h1 style={{color: 'black', fontWeight: 'bold', fontSize: '5em', textAlign: 'center'}}>Doople Feed</h1>
+                <h1 style={{color: 'black', fontWeight: 'bold', fontSize: '2em', textAlign: 'center'}}>This is where other users can see your dopples</h1>
                 {allImages}
 
                 <Grid className="bottom-nav">

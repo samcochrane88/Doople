@@ -3,7 +3,7 @@ import {logout} from "../helpers/auth";
 import {Grid, Row, Col, Image, Modal} from "react-bootstrap";
 import FileUploader from 'react-firebase-file-uploader';
 import firebase from 'firebase/app';
-import { MoonLoader } from 'react-spinners';
+import { ScaleLoader } from 'react-spinners';
 import {Link} from 'react-router-dom';
 
 
@@ -153,25 +153,25 @@ export default class Album extends React.Component {
             this.dopples =
               <div>
                 <Col className="main-photo card-1" xs={4}>
-                  <MoonLoader
+                  <ScaleLoader
                     color={'#000'}
                     loading={true}
                   />
                 </Col>
                 <Col className="main-photo card-1" xs={4}>
-                  <MoonLoader
+                  <ScaleLoader
                     color={'#000'}
                     loading={true}
                   />
                 </Col>
                 <Col className="main-photo card-1" xs={4}>
-                  <MoonLoader
+                  <ScaleLoader
                     color={'#000'}
                     loading={true}
                   />
                 </Col>
                 <Col className="main-photo card-1" xs={4}>
-                  <MoonLoader
+                  <ScaleLoader
                     color={'#000'}
                     loading={true}
                   />

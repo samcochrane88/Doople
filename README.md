@@ -47,4 +47,4 @@ Do what you will with this.
 
 * Fix loading icon when you upload a photo.
 * Mobile IOS auto orientation for selfies.
-* Chrome browser issues with being logged in. If can not use need to clear cache issue.
+* Chrome browser issues with being logged in. If can not log in you will need to clear cache issue.

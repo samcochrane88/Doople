@@ -29,13 +29,13 @@ exports.addSimilarImages = functions.firestore.document('photos/{document}')
 		const webDetection = results[0].webDetection
 
 		 let similarImages = [];
-		//
- 		// if (webDetection.partialMatchingImages.length) {
-		// 	webDetection.partialMatchingImages.forEach(image => {
-		// 	 	similarImages.push(image);
-		// 	 });
-		// }
-		//
+
+ 		if (webDetection.partialMatchingImages.length) {
+			webDetection.partialMatchingImages.forEach(image => {
+			 	similarImages.push(image);
+			 });
+		}
+		
  		if (webDetection.visuallySimilarImages.length) {
 			webDetection.visuallySimilarImages.forEach(image => {
 			 	similarImages.push(image);
@@ -47,7 +47,7 @@ exports.addSimilarImages = functions.firestore.document('photos/{document}')
 				similarImages.push(image);
 			});
 		}
-		
+
 		console.log('similarImages', similarImages)
 
 		db.collection('photos').doc(context.params.document).update({ similarImages })

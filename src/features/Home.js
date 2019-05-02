@@ -96,8 +96,7 @@ export default class Home extends React.Component {
 
     handleUploadSuccess(filename) {
 
-      // const db = firebase.firestore().settings({ timestampsInSnapshots: true });
-
+    
 
       console.log('STARTED HANDLE')
       // console.log( user );
@@ -149,7 +148,8 @@ export default class Home extends React.Component {
 
               return (
                 <Col
-                  onClick={() => this.setState({ showModal: true, currentPhoto: similarPhoto.url })}
+                  onClick={() => this.setState({ showModal: true,
+                     currentPhoto: similarPhoto.url })}
                   style={styles}
                   className="main-photo card-1"
                   key={similarPhoto.url}

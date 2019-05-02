@@ -1,8 +1,10 @@
+
+
 import React from "react";
 import {FontIcon, RaisedButton} from "material-ui";
 import {loginWithGoogle} from "../helpers/auth";
 import {firebaseAuth} from "../config/constants";
-
+import { ScaleLoader } from 'react-spinners';
 
 const firebaseAuthKey = "firebaseAuthInProgress";
 const appTokenKey = "appToken";
@@ -117,4 +119,13 @@ const LoginPage = ({handleGoogleLogin}) => (
         </div>
     </div>
 );
-const SplashScreen = () => (<p>Please Wait Loading...</p>)
+const SplashScreen = () => (
+  <div>
+    <ScaleLoader
+      css={'center'}
+      height={'200'}
+      width={'10'}
+      color={'#000'}
+      loading={true}
+      />
+</div>)
